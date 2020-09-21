@@ -45,9 +45,21 @@ i {
     display: flex;
     justify-content: space-between;
 }
-
+header{
+    background-color: #463139;
+    margin-bottom: 3vw;
+    color: white;
+    font-family: var(--hFontFam);
+    font-size: 2vw;
+    padding: 1vw;
+}
 /* Main START */
-
+.centered{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
 /* Main END */
 
 /* buttons START */

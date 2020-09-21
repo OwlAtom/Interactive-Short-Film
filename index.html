@@ -4,23 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
-    
+
     <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
     <script src="https://vjs.zencdn.net/7.8.4/video.js" defer></script>
-    
+
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="assets/js/script.js" defer></script>
     <title>Now playing: "Zoo Detective: Monkey Trouble"</title>
 </head>
 
 <body onload="getYear()">
-    <video id="video1" class="video-js responsive-video ratio-16-9" controls width="640" height="360">
-        <source src="assets/video/big_buck_bunny.webm" type="video/webm">
-        <source src="assets/video/big_buck_bunny.mp4" type="video/mp4">
-    </video>
+    <header>Aalborg zoo</header>
+    <div class="centered">
+        <video id="video1" class="video-js responsive-video ratio-16-9" controls width="1280" height="720">
+            <source src="assets/video/big_buck_bunny.webm" type="video/webm">
+            <source src="assets/video/big_buck_bunny.mp4" type="video/mp4">
+        </video>
         <p id="copyright"></p>
+
+    </div>
 </body>
 
 </html>
