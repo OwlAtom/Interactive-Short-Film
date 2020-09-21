@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* Welcome to the start of the CSS*/
+:root {
+    --hFont: 3vw;
+    --pFont: 1.1vw;
+    
+    --hFontFam:'Open Sans', sans-serif;
+    --pFontFam:'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--hFontFam);
+    font-size: var(--hFont);
+}
+
+p,
+label,
+button,
+b,
+a,
+i {
+    font-family: var(--pFontFam);
+    font-size: var(--pFont);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main START */
+
+/* Main END */
+
+/* buttons START */
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+/* buttons END */
+@media screen AND (max-width:760px) {
+    :root {
+        --hFont: 4vw;
+        --pFont: 1.8vw;
+    }
+}
+
+/* MediaQueries for mobile START */
+@media screen AND (max-width:500px) {
+    :root {
+        --hFont: 6vw;
+        --pFont: 2vw;
+    }
+}
