@@ -20,7 +20,7 @@ videojs('video1').ready(function () {
 let loopStart = 1;
 let loopEnd = 19;
 let loopEnabled = false;
-let pauseTime = 3;
+let pauseTime = 119;
 
 function onVideoTimeupdate() {
     if (loopEnabled) {

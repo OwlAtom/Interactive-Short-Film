@@ -144,12 +144,12 @@ let video = {
 const hotspots = [{
         active: true,
         videoId: "video1",
-        markIn: 1,
-        markOut: 20,
-        sizeX: 6,
-        sizeY: 9,
-        posX: 64,
-        posY: 87,
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
         ui: {
             type: "box",
             style: "border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw"
@@ -157,21 +157,22 @@ const hotspots = [{
         hotspot: {
             type: "function",
             func: () => {
-                videoPlayer.currentTime(20);
+                // Løver
+                videoPlayer.currentTime(284);
                 videoPlayer.play();
-                pauseTime = 22;
+                pauseTime = 288;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 1,
-        markOut: 20,
-        sizeX: 10,
-        sizeY: 10,
-        posX: 24,
-        posY: 5,
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 7.3,
+        posX: 66.2,
+        posY: 87.6,
         ui: {
             type: "box",
             style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
@@ -188,21 +189,22 @@ const hotspots = [{
         hotspot: {
             type: "function",
             func: () => {
-                videoPlayer.currentTime(22);
+                // flamingo
+                videoPlayer.currentTime(280);
                 videoPlayer.play();
-                pauseTime = 24;
+                pauseTime = 283;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 1,
-        markOut: 20,
-        sizeX: 6,
-        sizeY: 10,
-        posX: 18,
-        posY: 31,
+        markIn: 95,
+        markOut: 120,
+        sizeX: 4.1,
+        sizeY: 7.4,
+        posX: 19.7,
+        posY: 30.4,
         ui: {
             type: "box",
             style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
@@ -210,21 +212,22 @@ const hotspots = [{
         hotspot: {
             type: "function",
             func: () => {
-                videoPlayer.currentTime(24);
+                // pingvin
+                videoPlayer.currentTime(125);
                 videoPlayer.play();
-                pauseTime = 26;
+                pauseTime = 182;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 24,
-        markOut: 60,
-        sizeX: 6,
-        sizeY: 10,
-        posX: 18,
-        posY: 59,
+        markIn: 0,
+        markOut: 95,
+        sizeX: 10,
+        sizeY: 20,
+        posX: 24,
+        posY: 5,
         ui: {
             type: "box",
             style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
@@ -232,9 +235,10 @@ const hotspots = [{
         hotspot: {
             type: "function",
             func: () => {
-                videoPlayer.currentTime(0);
+                // DEBUG -- skip to first choice
+                videoPlayer.currentTime(95);
                 videoPlayer.play();
-                pauseTime = 3;
+                pauseTime = 120;
             }
         }
     }
