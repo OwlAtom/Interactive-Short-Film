@@ -142,7 +142,8 @@ let video = {
 
 let animalCircle = {
     type: "box",
-    style: `border: 3px solid rgb(142, 0, 0); border-radius: 100vw`};
+    style: `border: 3px solid rgb(142, 0, 0); border-radius: 100vw`
+};
 let finalBox = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.5); border-radius: 5vw`
@@ -492,7 +493,7 @@ const hotspots = [{
         hotspot: {
             type: "function",
             func: () => {
-               // spørgsmåltekst
+                // spørgsmåltekst
             }
         }
     },
@@ -652,11 +653,11 @@ const hotspots = [{
         posY: 75,
         ui: infoBox,
         hotspot: {
-                // Flodhest info
-                type: "link",
-                onHover: true,
-                url: "https://aalborgzoo.dk/dyr/dvaergflodhest.aspx",
-                target: "_blank",
+            // Flodhest info
+            type: "link",
+            onHover: true,
+            url: "https://aalborgzoo.dk/dyr/dvaergflodhest.aspx",
+            target: "_blank",
         }
     },
     {
@@ -690,11 +691,11 @@ const hotspots = [{
         posY: 75,
         ui: infoBox,
         hotspot: {
-                // Kudu info
-                type: "link",
-                onHover: true,
-                url: "https://aalborgzoo.dk/dyr/kudu.aspx",
-                target: "_blank",
+            // Kudu info
+            type: "link",
+            onHover: true,
+            url: "https://aalborgzoo.dk/dyr/kudu.aspx",
+            target: "_blank",
         }
     },
     {
@@ -715,6 +716,54 @@ const hotspots = [{
                 videoPlayer.play();
                 pauseTime = 221;
             }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 254,
+        markOut: 255.5,
+        sizeX: 15,
+        sizeY: 5,
+        posX: 63,
+        posY: 74,
+        ui: {
+            type: "box",
+            style: `border: 1px solid white; font-size: 250%; color: #fff; border-radius: 3vw;text-align:center;line-height: 120%`,
+            text: "Se rulletekster"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // final credits
+                videoPlayer.currentTime(255);
+                videoPlayer.play();
+                pauseTime = 281;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 254,
+        markOut: 255.5,
+        sizeX: 30,
+        sizeY: 3,
+        posX: 55,
+        posY: 64,
+        ui: {
+            type: "box",
+            style: `border: none;
+            font-size: 250%;
+            color: #fff;`,
+            text: "Anskaf dig et årskort til Zoo i dag"
+        },
+        // final zoo annual pass
+        hotspot: {
+            type: "link",
+            onHover: true,
+            url: "https://aalborgzoo.dk/aarskort.aspx",
+            target: "_blank",
         }
     }
 ];
