@@ -161,8 +161,7 @@ let infoBox = {
     text: "Læs mere om dette dyr"
 };
 
-const hotspots = [
-    {
+const hotspots = [{
         active: true,
         videoId: "video1",
         markIn: 0,
@@ -176,15 +175,12 @@ const hotspots = [
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(95);
+                videoPlayer.currentTime(298);
                 videoPlayer.play();
-                pauseTime = 119;
+                pauseTime = 302;
             }
         }
     },
-
-
-    
     {
         active: true,
         videoId: "video1",
@@ -205,7 +201,6 @@ const hotspots = [
             }
         }
     },
-
     {
         active: true,
         videoId: "video1",
@@ -294,7 +289,6 @@ const hotspots = [
             }
         }
     },
-
     {
         active: true,
         videoId: "video1",
@@ -319,7 +313,6 @@ const hotspots = [
             }
         }
     },
-
     {
         active: true,
         videoId: "video1",
@@ -339,11 +332,10 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-               // spørgsmåltekst
+                // spørgsmåltekst
             }
         }
     },
-
     {
         active: true,
         videoId: "video1",
@@ -475,6 +467,7 @@ const hotspots = [
         posY: 75,
         ui: infoBox,
         hotspot: {
+            // Flamingo info
             type: "link",
             onHover: true,
             url: "https://aalborgzoo.dk/dyr/cariberflamingo.aspx",
@@ -484,41 +477,39 @@ const hotspots = [
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 299,
+        markOut: 304,
+        sizeX: 11,
+        sizeY: 6.9,
+        posX: 78,
+        posY: 75,
+        ui: failBox,
         hotspot: {
             type: "function",
             func: () => {
                 // Løve fail
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(95);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 119;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
+        markIn: 299,
+        markOut: 304,
+        sizeX: 14,
+        sizeY: 10,
+        posX: 9,
+        posY: 75,
         ui: infoBox,
         hotspot: {
-            type: "function",
-            func: () => {
-                // Løve info
-                videoPlayer.currentTime(284);
-                videoPlayer.play();
-                pauseTime = 288;
-            }
+            // Løve info
+            type: "link",
+            onHover: true,
+            url: "https://aalborgzoo.dk/dyr/loeve.aspx",
+            target: "_blank",
         }
     },
     {
@@ -713,7 +704,3 @@ const hotspots = [
 
 
 */
-
-
-
-
