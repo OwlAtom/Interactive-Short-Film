@@ -159,6 +159,14 @@ let finalBox = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
 };
+let FailBox = {
+    type: "box",
+    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+};
+let InfoBox = {
+    type: "box",
+    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+};
 const hotspots = [
     {
         active: true,
@@ -193,7 +201,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // pingvin
+                // Pingvin valg
                 videoPlayer.currentTime(125);
                 videoPlayer.play();
                 pauseTime = 182;
@@ -213,7 +221,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // flamingo
+                // flamingo valg
                 videoPlayer.currentTime(280);
                 videoPlayer.play();
                 pauseTime = 283;
@@ -233,7 +241,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Løve
+                // Løve valg
                 videoPlayer.currentTime(284);
                 videoPlayer.play();
                 pauseTime = 288;
@@ -253,7 +261,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Elefant
+                // Elefant valg
                 videoPlayer.currentTime(284);
                 videoPlayer.play();
                 pauseTime = 288;
@@ -273,7 +281,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Flodhest
+                // Flodhest valg
                 videoPlayer.currentTime(284);
                 videoPlayer.play();
                 pauseTime = 288;
@@ -293,7 +301,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Kudu
+                // Kudu valg
                 videoPlayer.currentTime(284);
                 videoPlayer.play();
                 pauseTime = 288;
@@ -313,7 +321,7 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Final : Win
+                // Final : Win valg
                 videoPlayer.currentTime(284);
                 videoPlayer.play();
                 pauseTime = 288;
@@ -333,7 +341,187 @@ const hotspots = [
         hotspot: {
             type: "function",
             func: () => {
-                // Final: fail
+                // Final: fail valg
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Flamingo fail
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Flamingo info
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Løve fail
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: infoBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Løve info
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Flodhest fail
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Flodhest info
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Kudo fail
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Kudo info
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+        ,
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Final fail
                 videoPlayer.currentTime(284);
                 videoPlayer.play();
                 pauseTime = 288;
