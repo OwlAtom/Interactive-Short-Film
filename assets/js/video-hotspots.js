@@ -153,7 +153,7 @@ let video = {
 // text: "This is text in a box"
 let animalCircle = {
     type: "box",
-    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+    style: `border: none; background-color: rgba(2,3,4,.3); border-radius: 100vw`
 };
 let finalBox = {
     type: "box",
