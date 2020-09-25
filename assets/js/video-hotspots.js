@@ -142,8 +142,7 @@ let video = {
 
 let animalCircle = {
     type: "box",
-    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
-};
+    style: `border: 3px solid #003b8e; background-color: rgba(0,0,0,.2); border-radius: 100vw`};
 let finalBox = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.5); border-radius: 5vw`
