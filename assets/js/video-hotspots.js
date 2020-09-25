@@ -174,9 +174,9 @@ const hotspots = [{
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(155);
+                videoPlayer.currentTime(250);
                 videoPlayer.play();
-                pauseTime = 302;
+                pauseTime = 255;
             }
         }
     },
@@ -509,7 +509,7 @@ const hotspots = [{
                 // Final : Win valg
                 videoPlayer.currentTime(225);
                 videoPlayer.play();
-                pauseTime = 282;
+                pauseTime = 255;
             }
         }
     },
