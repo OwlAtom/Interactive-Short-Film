@@ -174,9 +174,9 @@ const hotspots = [{
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(155);
+                videoPlayer.currentTime(250);
                 videoPlayer.play();
-                pauseTime = 302;
+                pauseTime = 255;
             }
         }
     },
@@ -379,9 +379,6 @@ const hotspots = [{
             }
         }
     },
-
-
-    
     {
         active: true,
         videoId: "video1",
@@ -516,7 +513,7 @@ const hotspots = [{
                 // Final : Win valg
                 videoPlayer.currentTime(225);
                 videoPlayer.play();
-                pauseTime = 282;
+                pauseTime = 255;
             }
         }
     },
@@ -619,100 +616,96 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 317,
+        markOut: 322,
+        sizeX: 11,
+        sizeY: 6.9,
+        posX: 78,
+        posY: 75,
+        ui: failBox,
         hotspot: {
             type: "function",
             func: () => {
                 // Flodhest fail
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(155);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 182;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 317,
+        markOut: 322,
+        sizeX: 14,
+        sizeY: 10,
+        posX: 9,
+        posY: 75,
+        ui: infoBox,
         hotspot: {
-            type: "function",
-            func: () => {
                 // Flodhest info
-                videoPlayer.currentTime(284);
-                videoPlayer.play();
-                pauseTime = 288;
-            }
+                type: "link",
+                onHover: true,
+                url: "https://aalborgzoo.dk/dyr/dvaergflodhest.aspx",
+                target: "_blank",
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 308,
+        markOut: 313,
+        sizeX: 11,
+        sizeY: 6.9,
+        posX: 78,
+        posY: 75,
+        ui: failBox,
         hotspot: {
             type: "function",
             func: () => {
-                // Kudo fail
-                videoPlayer.currentTime(284);
+                // Kudu fail
+                videoPlayer.currentTime(155);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 182;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 308,
+        markOut: 313,
+        sizeX: 14,
+        sizeY: 10,
+        posX: 9,
+        posY: 75,
+        ui: infoBox,
         hotspot: {
-            type: "function",
-            func: () => {
-                // Kudo info
-                videoPlayer.currentTime(284);
-                videoPlayer.play();
-                pauseTime = 288;
-            }
+                // Kudu info
+                type: "link",
+                onHover: true,
+                url: "https://aalborgzoo.dk/dyr/kudu.aspx",
+                target: "_blank",
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 332,
+        markOut: 334,
+        sizeX: 11,
+        sizeY: 6.9,
+        posX: 78,
+        posY: 75,
+        ui: failBox,
         hotspot: {
             type: "function",
             func: () => {
                 // Final fail
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(208);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 221;
             }
         }
     }
