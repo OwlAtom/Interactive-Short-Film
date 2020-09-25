@@ -142,7 +142,8 @@ let video = {
 
 let animalCircle = {
     type: "box",
-    style: `border: 3px solid rgb(142, 0, 0); border-radius: 100vw`};
+    style: `border: 3px solid rgb(142, 0, 0); border-radius: 100vw`
+};
 let finalBox = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.5); border-radius: 5vw`
@@ -161,554 +162,602 @@ let infoBox = {
 };
 
 const hotspots = [{
-        active: true,
-        videoId: "video1",
-        markIn: 0,
-        markOut: 95,
-        sizeX: 10,
-        sizeY: 20,
-        posX: 24,
-        posY: 5,
-        ui: animalCircle,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // DEBUG -- skip to first choice
-                videoPlayer.currentTime(250);
-                videoPlayer.play();
-                pauseTime = 255;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 95,
-        markOut: 123,
-        sizeX: 4.1,
-        sizeY: 7.4,
-        posX: 19.7,
-        posY: 30.4,
-        ui: animalCircle,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Pingvin valg
-                videoPlayer.currentTime(125);
-                videoPlayer.play();
-                pauseTime = 182;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 95,
-        markOut: 123,
-        sizeX: 14,
-        sizeY: 6,
-        posX: 2,
-        posY: 75.5,
-        ui: {
-            type: "box",
-            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
-            text: "Pingvinerne"
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Pingvin valgtext
-                videoPlayer.currentTime(125);
-                videoPlayer.play();
-                pauseTime = 182;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 7.3,
-        posX: 66.2,
-        posY: 87.6,
-        ui: animalCircle,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // flamingo valg
-                videoPlayer.currentTime(290);
-                videoPlayer.play();
-                pauseTime = 293;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 14,
-        sizeY: 6,
-        posX: 2,
-        posY: 84,
-        ui: {
-            type: "box",
-            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
-            text: "Flamingoerne"
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // flamingo valgtext 
-                videoPlayer.currentTime(290);
-                videoPlayer.play();
-                pauseTime = 293;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: animalCircle,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Løve valg
-                videoPlayer.currentTime(298);
-                videoPlayer.play();
-                pauseTime = 302;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 14,
-        sizeY: 6,
-        posX: 2,
-        posY: 67,
-        ui: {
-            type: "box",
-            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
-            text: "Løverne"
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Løve valgtext
-                videoPlayer.currentTime(298);
-                videoPlayer.play();
-                pauseTime = 302;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 95,
-        markOut: 123,
-        sizeX: 25,
-        sizeY: 3,
-        posX: 2,
-        posY: 58.5,
-        ui: {
-            type: "box",
-            style: `border: none;
-            font-size: 250%;
-            color: #272727;`,
-            text: "Hvem skal udspørges?"
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // spørgsmåltekst
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 155,
-        markOut: 183,
-        sizeX: 6,
-        sizeY: 11,
-        posX: 46.9,
-        posY: 34.7,
-        ui: animalCircle,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Elefant valg
-                videoPlayer.currentTime(184);
-                videoPlayer.play();
-                pauseTime = 221;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 155,
-        markOut: 183,
-        sizeX: 14,
-        sizeY: 6,
-        posX: 5,
-        posY: 73,
-        ui: {
-            type: "box",
-            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
-            text: "Elefanterne"
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Elefant valgtext
-                videoPlayer.currentTime(184);
-                videoPlayer.play();
-                pauseTime = 221;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 155,
-        markOut: 183,
-        sizeX: 6,
-        sizeY: 11,
-        posX: 9,
-        posY: 54,
-        ui: {
-            type: "box",
-            style: `border: 3px solid rgb(142, 0, 0); border-radius: 100vw; background: url(assets/images/flodhest.png); background-size: cover;
-            background-repeat: no-repeat;`
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Flodhest valg
-                videoPlayer.currentTime(317);
-                videoPlayer.play();
-                pauseTime = 321;
-            }
-        }
-    },
-
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 155,
-        markOut: 183,
-        sizeX: 14,
-        sizeY: 6,
-        posX: 5,
-        posY: 81,
-        ui: {
-            type: "box",
-            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
-            text: "Flodhestene"
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Flodhest valgtext
-                videoPlayer.currentTime(317);
-                videoPlayer.play();
-                pauseTime = 321;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 155,
-        markOut: 183,
-        sizeX: 6,
-        sizeY: 11,
-        posX: 14.5,
-        posY: 14.5,
-        ui: animalCircle,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Kudu valg
-                videoPlayer.currentTime(307);
-                videoPlayer.play();
-                pauseTime = 312;
-            }
-        }
-    },
-
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 155,
-        markOut: 183,
-        sizeX: 14,
-        sizeY: 6,
-        posX: 5,
-        posY: 89,
-        ui: {
-            type: "box",
-            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
-            text: "Kudoerne"
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Kudu valg
-                videoPlayer.currentTime(307);
-                videoPlayer.play();
-                pauseTime = 312;
-            }
-        }
-    },
-
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 155,
-        markOut: 183,
-        sizeX: 27.3,
-        sizeY: 5.7,
-        posX: 0,
-        posY: 66,
-        ui: {
-            type: "box",
-            style: `border: none; font-size: 250%; color: #272727; text-align: center; background-color: rgb(180 171 159); padding-left: 3%;
-            padding-top: 0.5%`,
-            text: "Hvem skal udspørges?"
-        },
-        hotspot: {
-            type: "function",
-            func: () => {
-               // spørgsmåltekst
-            }
-        }
-    },
-
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 209,
-        markOut: 222,
-        sizeX: 21,
-        sizeY: 68,
-        posX: 1,
-        posY: 29,
-        ui: finalBox,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Final : Win valg
-                videoPlayer.currentTime(225);
-                videoPlayer.play();
-                pauseTime = 255;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 209,
-        markOut: 222,
-        sizeX: 21,
-        sizeY: 68,
-        posX: 78,
-        posY: 26,
-        ui: finalBox,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Final: fail valg
-                videoPlayer.currentTime(325);
-                videoPlayer.play();
-                pauseTime = 333;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 290,
-        markOut: 296,
-        sizeX: 11,
-        sizeY: 6.9,
-        posX: 78,
-        posY: 75,
-        ui: failBox,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Flamingo fail
-                videoPlayer.currentTime(95);
-                videoPlayer.play();
-                pauseTime = 119;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 290,
-        markOut: 296,
-        sizeX: 14,
-        sizeY: 10,
-        posX: 9,
-        posY: 75,
-        ui: infoBox,
-        hotspot: {
-            // Flamingo info
-            type: "link",
-            onHover: true,
-            url: "https://aalborgzoo.dk/dyr/cariberflamingo.aspx",
-            target: "_blank",
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 299,
-        markOut: 304,
-        sizeX: 11,
-        sizeY: 6.9,
-        posX: 78,
-        posY: 75,
-        ui: failBox,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Løve fail
-                videoPlayer.currentTime(95);
-                videoPlayer.play();
-                pauseTime = 119;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 299,
-        markOut: 304,
-        sizeX: 14,
-        sizeY: 10,
-        posX: 9,
-        posY: 75,
-        ui: infoBox,
-        hotspot: {
-            // Løve info
-            type: "link",
-            onHover: true,
-            url: "https://aalborgzoo.dk/dyr/loeve.aspx",
-            target: "_blank",
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 317,
-        markOut: 322,
-        sizeX: 11,
-        sizeY: 6.9,
-        posX: 78,
-        posY: 75,
-        ui: failBox,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Flodhest fail
-                videoPlayer.currentTime(155);
-                videoPlayer.play();
-                pauseTime = 182;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 317,
-        markOut: 322,
-        sizeX: 14,
-        sizeY: 10,
-        posX: 9,
-        posY: 75,
-        ui: infoBox,
-        hotspot: {
-                // Flodhest info
-                type: "link",
-                onHover: true,
-                url: "https://aalborgzoo.dk/dyr/dvaergflodhest.aspx",
-                target: "_blank",
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 308,
-        markOut: 313,
-        sizeX: 11,
-        sizeY: 6.9,
-        posX: 78,
-        posY: 75,
-        ui: failBox,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Kudu fail
-                videoPlayer.currentTime(155);
-                videoPlayer.play();
-                pauseTime = 182;
-            }
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 308,
-        markOut: 313,
-        sizeX: 14,
-        sizeY: 10,
-        posX: 9,
-        posY: 75,
-        ui: infoBox,
-        hotspot: {
-                // Kudu info
-                type: "link",
-                onHover: true,
-                url: "https://aalborgzoo.dk/dyr/kudu.aspx",
-                target: "_blank",
-        }
-    },
-    {
-        active: true,
-        videoId: "video1",
-        markIn: 332,
-        markOut: 334,
-        sizeX: 11,
-        sizeY: 6.9,
-        posX: 78,
-        posY: 75,
-        ui: failBox,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // Final fail
-                videoPlayer.currentTime(208);
-                videoPlayer.play();
-                pauseTime = 221;
-            }
+    active: true,
+    videoId: "video1",
+    markIn: 0,
+    markOut: 95,
+    sizeX: 10,
+    sizeY: 20,
+    posX: 24,
+    posY: 5,
+    ui: animalCircle,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // DEBUG -- skip to first choice
+            videoPlayer.currentTime(250);
+            videoPlayer.play();
+            pauseTime = 255;
         }
     }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 95,
+    markOut: 123,
+    sizeX: 4.1,
+    sizeY: 7.4,
+    posX: 19.7,
+    posY: 30.4,
+    ui: animalCircle,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Pingvin valg
+            videoPlayer.currentTime(125);
+            videoPlayer.play();
+            pauseTime = 182;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 95,
+    markOut: 123,
+    sizeX: 14,
+    sizeY: 6,
+    posX: 2,
+    posY: 75.5,
+    ui: {
+        type: "box",
+        style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+        text: "Pingvinerne"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Pingvin valgtext
+            videoPlayer.currentTime(125);
+            videoPlayer.play();
+            pauseTime = 182;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 95,
+    markOut: 120,
+    sizeX: 3.8,
+    sizeY: 7.3,
+    posX: 66.2,
+    posY: 87.6,
+    ui: animalCircle,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // flamingo valg
+            videoPlayer.currentTime(290);
+            videoPlayer.play();
+            pauseTime = 293;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 95,
+    markOut: 120,
+    sizeX: 14,
+    sizeY: 6,
+    posX: 2,
+    posY: 84,
+    ui: {
+        type: "box",
+        style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+        text: "Flamingoerne"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // flamingo valgtext 
+            videoPlayer.currentTime(290);
+            videoPlayer.play();
+            pauseTime = 293;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 95,
+    markOut: 120,
+    sizeX: 3.8,
+    sizeY: 6.7,
+    posX: 25.8,
+    posY: 4.9,
+    ui: animalCircle,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Løve valg
+            videoPlayer.currentTime(298);
+            videoPlayer.play();
+            pauseTime = 302;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 95,
+    markOut: 120,
+    sizeX: 14,
+    sizeY: 6,
+    posX: 2,
+    posY: 67,
+    ui: {
+        type: "box",
+        style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+        text: "Løverne"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Løve valgtext
+            videoPlayer.currentTime(298);
+            videoPlayer.play();
+            pauseTime = 302;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 95,
+    markOut: 123,
+    sizeX: 25,
+    sizeY: 3,
+    posX: 2,
+    posY: 58.5,
+    ui: {
+        type: "box",
+        style: `border: none;
+            font-size: 250%;
+            color: #272727;`,
+        text: "Hvem skal udspørges?"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // spørgsmåltekst
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 155,
+    markOut: 183,
+    sizeX: 6,
+    sizeY: 11,
+    posX: 46.9,
+    posY: 34.7,
+    ui: animalCircle,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Elefant valg
+            videoPlayer.currentTime(184);
+            videoPlayer.play();
+            pauseTime = 221;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 155,
+    markOut: 183,
+    sizeX: 14,
+    sizeY: 6,
+    posX: 5,
+    posY: 73,
+    ui: {
+        type: "box",
+        style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+        text: "Elefanterne"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Elefant valgtext
+            videoPlayer.currentTime(184);
+            videoPlayer.play();
+            pauseTime = 221;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 155,
+    markOut: 183,
+    sizeX: 6,
+    sizeY: 11,
+    posX: 9,
+    posY: 54,
+    ui: {
+        type: "box",
+        style: `border: 3px solid rgb(142, 0, 0); border-radius: 100vw; background: url(assets/images/flodhest.png); background-size: cover;
+            background-repeat: no-repeat;`
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Flodhest valg
+            videoPlayer.currentTime(317);
+            videoPlayer.play();
+            pauseTime = 321;
+        }
+    }
+},
+
+{
+    active: true,
+    videoId: "video1",
+    markIn: 155,
+    markOut: 183,
+    sizeX: 14,
+    sizeY: 6,
+    posX: 5,
+    posY: 81,
+    ui: {
+        type: "box",
+        style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+        text: "Flodhestene"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Flodhest valgtext
+            videoPlayer.currentTime(317);
+            videoPlayer.play();
+            pauseTime = 321;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 155,
+    markOut: 183,
+    sizeX: 6,
+    sizeY: 11,
+    posX: 14.5,
+    posY: 14.5,
+    ui: animalCircle,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Kudu valg
+            videoPlayer.currentTime(307);
+            videoPlayer.play();
+            pauseTime = 312;
+        }
+    }
+},
+
+{
+    active: true,
+    videoId: "video1",
+    markIn: 155,
+    markOut: 183,
+    sizeX: 14,
+    sizeY: 6,
+    posX: 5,
+    posY: 89,
+    ui: {
+        type: "box",
+        style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+        text: "Kudoerne"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Kudu valg
+            videoPlayer.currentTime(307);
+            videoPlayer.play();
+            pauseTime = 312;
+        }
+    }
+},
+
+{
+    active: true,
+    videoId: "video1",
+    markIn: 155,
+    markOut: 183,
+    sizeX: 27.3,
+    sizeY: 5.7,
+    posX: 0,
+    posY: 66,
+    ui: {
+        type: "box",
+        style: `border: none; font-size: 250%; color: #272727; text-align: center; background-color: rgb(180 171 159); padding-left: 3%;
+            padding-top: 0.5%`,
+        text: "Hvem skal udspørges?"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // spørgsmåltekst
+        }
+    }
+},
+
+{
+    active: true,
+    videoId: "video1",
+    markIn: 209,
+    markOut: 222,
+    sizeX: 21,
+    sizeY: 68,
+    posX: 1,
+    posY: 29,
+    ui: finalBox,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Final : Win valg
+            videoPlayer.currentTime(225);
+            videoPlayer.play();
+            pauseTime = 255;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 209,
+    markOut: 222,
+    sizeX: 21,
+    sizeY: 68,
+    posX: 78,
+    posY: 26,
+    ui: finalBox,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Final: fail valg
+            videoPlayer.currentTime(325);
+            videoPlayer.play();
+            pauseTime = 333;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 290,
+    markOut: 296,
+    sizeX: 11,
+    sizeY: 6.9,
+    posX: 78,
+    posY: 75,
+    ui: failBox,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Flamingo fail
+            videoPlayer.currentTime(95);
+            videoPlayer.play();
+            pauseTime = 119;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 290,
+    markOut: 296,
+    sizeX: 14,
+    sizeY: 10,
+    posX: 9,
+    posY: 75,
+    ui: infoBox,
+    hotspot: {
+        // Flamingo info
+        type: "link",
+        onHover: true,
+        url: "https://aalborgzoo.dk/dyr/cariberflamingo.aspx",
+        target: "_blank",
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 299,
+    markOut: 304,
+    sizeX: 11,
+    sizeY: 6.9,
+    posX: 78,
+    posY: 75,
+    ui: failBox,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Løve fail
+            videoPlayer.currentTime(95);
+            videoPlayer.play();
+            pauseTime = 119;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 299,
+    markOut: 304,
+    sizeX: 14,
+    sizeY: 10,
+    posX: 9,
+    posY: 75,
+    ui: infoBox,
+    hotspot: {
+        // Løve info
+        type: "link",
+        onHover: true,
+        url: "https://aalborgzoo.dk/dyr/loeve.aspx",
+        target: "_blank",
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 317,
+    markOut: 322,
+    sizeX: 11,
+    sizeY: 6.9,
+    posX: 78,
+    posY: 75,
+    ui: failBox,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Flodhest fail
+            videoPlayer.currentTime(155);
+            videoPlayer.play();
+            pauseTime = 182;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 317,
+    markOut: 322,
+    sizeX: 14,
+    sizeY: 10,
+    posX: 9,
+    posY: 75,
+    ui: infoBox,
+    hotspot: {
+        // Flodhest info
+        type: "link",
+        onHover: true,
+        url: "https://aalborgzoo.dk/dyr/dvaergflodhest.aspx",
+        target: "_blank",
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 308,
+    markOut: 313,
+    sizeX: 11,
+    sizeY: 6.9,
+    posX: 78,
+    posY: 75,
+    ui: failBox,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Kudu fail
+            videoPlayer.currentTime(155);
+            videoPlayer.play();
+            pauseTime = 182;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 308,
+    markOut: 313,
+    sizeX: 14,
+    sizeY: 10,
+    posX: 9,
+    posY: 75,
+    ui: infoBox,
+    hotspot: {
+        // Kudu info
+        type: "link",
+        onHover: true,
+        url: "https://aalborgzoo.dk/dyr/kudu.aspx",
+        target: "_blank",
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 332,
+    markOut: 334,
+    sizeX: 11,
+    sizeY: 6.9,
+    posX: 78,
+    posY: 75,
+    ui: failBox,
+    hotspot: {
+        type: "function",
+        func: () => {
+            // Final fail
+            videoPlayer.currentTime(208);
+            videoPlayer.play();
+            pauseTime = 221;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 254,
+    markOut: 255.5,
+    sizeX: 15,
+    sizeY: 5,
+    posX: 63,
+    posY: 74,
+    ui: {
+        type: "box",
+        style: `border: 1px solid white; font-size: 250%; color: #fff; border-radius: 3vw;text-align:center;line-height: 120%`,
+        text: "Se rulletekster"
+    },
+    hotspot: {
+        type: "function",
+        func: () => {
+            // final credits
+            videoPlayer.currentTime(255);
+            videoPlayer.play();
+            pauseTime = 281;
+        }
+    }
+},
+{
+    active: true,
+    videoId: "video1",
+    markIn: 254,
+    markOut: 255.5,
+    sizeX: 30,
+    sizeY: 3,
+    posX: 55,
+    posY: 64,
+    ui: {
+        type: "box",
+        style: `border: none;
+            font-size: 250%;
+            color: #fff;`,
+        text: "Anskaf dig et årskort til Zoo i dag"
+    },
+    // final zoo annual pass
+    hotspot: {
+        type: "link",
+        onHover: true,
+        url: "https://aalborgzoo.dk/aarskort.aspx",
+        target: "_blank",
+    }
+}
 ];
 
 
