@@ -142,7 +142,7 @@ let video = {
 
 let animalCircle = {
     type: "box",
-    style: `border: 5px solid #003b8e; background-color: rgba(0,0,0,.2); border-radius: 100vw`
+    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
 };
 let finalBox = {
     type: "box",
@@ -339,12 +339,12 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 15.8,
-        posY: 2.9,
+        sizeX: 6,
+        sizeY: 11,
+        posX: 46.9,
+        posY: 34.7,
         ui: animalCircle,
         hotspot: {
             type: "function",
@@ -359,12 +359,12 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 30.8,
-        posY: 10.9,
+        sizeX: 6,
+        sizeY: 11,
+        posX: 11,
+        posY: 56,
         ui: animalCircle,
         hotspot: {
             type: "function",
@@ -379,12 +379,12 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
-        sizeX: 5.6,
-        sizeY: 9.8,
-        posX: 15,
-        posY: 17,
+        sizeX: 6,
+        sizeY: 11,
+        posX: 14.5,
+        posY: 14.5,
         ui: animalCircle,
         hotspot: {
             type: "function",
