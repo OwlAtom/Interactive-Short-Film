@@ -159,14 +159,20 @@ let finalBox = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
 };
-let FailBox = {
+
+let failBox = {
     type: "box",
-    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+    style: `border: none; background-color: red; border-radius: 100vw`,
+    text: "Prøv igen"
 };
+
 let infoBox = {
     type: "box",
-    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+    style: `border: none; background-color: red; border-radius: 100vw`,
+    text: "Læs mere om dette dyr"
 };
+
+
 const hotspots = [
     {
         active: true,
@@ -182,9 +188,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(95);
+                videoPlayer.currentTime(289);
                 videoPlayer.play();
-                pauseTime = 120;
+                pauseTime = 294;
             }
         }
     },
@@ -222,9 +228,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // flamingo valg
-                videoPlayer.currentTime(280);
+                videoPlayer.currentTime(289);
                 videoPlayer.play();
-                pauseTime = 283;
+                pauseTime = 294;
             }
         }
     },
@@ -242,9 +248,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Løve valg
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(298);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 302;
             }
         }
     },
@@ -342,50 +348,47 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Final: fail valg
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(95);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 119;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 290,
+        markOut: 296,
+        sizeX: 10,
+        sizeY: 10,
+        posX: 78,
+        posY: 75,
+        ui: failBox,
         hotspot: {
             type: "function",
             func: () => {
                 // Flamingo fail
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(95);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 119;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
+        markIn: 290,
+        markOut: 296,
+        sizeX: 10.8,
+        sizeY: 10.7,
+        posX: 9,
+        posY: 75,
         ui: infoBox,
         hotspot: {
-            type: "function",
-            func: () => {
-                // Flamingo info
-                videoPlayer.currentTime(284);
-                videoPlayer.play();
-                pauseTime = 288;
-            }
+            type: "link",
+            onHover: true,
+            url: "https://aalborgzoo.dk/dyr/cariberflamingo.aspx",
+            target: "_blank",
         }
     },
     {
@@ -508,7 +511,7 @@ const hotspots = [
             }
         }
     },
-        {
+    {
         active: true,
         videoId: "video1",
         markIn: 95,
@@ -547,7 +550,7 @@ const hotspots = [
     posY: 50,               // top position (in %, but don't write %)
     ui: {                               // how should the hotspot look?
         type: "box",                                // type: "box" or "image"
-        title: "Text when hovering the hotspot",    // optional: add a title attribute with the text 
+        title: "Text when hovering the hotspot",    // optional: add a title attribute with the text
         image: "",                                  // add url for image (if type=image)
         style: "",                                  // add styles, can be used for both image and box
     },
@@ -562,6 +565,8 @@ const hotspots = [
         }
     }
 }
+
+
 
 // BOX/LINK ONLY EXAMPLE ----------------------------------------------------
 // All these keys are required for boxes/links
@@ -618,3 +623,7 @@ const hotspots = [
 
 
 */
+
+
+
+
