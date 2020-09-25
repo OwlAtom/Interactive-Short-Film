@@ -174,7 +174,7 @@ const hotspots = [{
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(250);
+                videoPlayer.currentTime(209);
                 videoPlayer.play();
                 pauseTime = 255;
             }
@@ -461,7 +461,7 @@ const hotspots = [{
         ui: {
             type: "box",
             style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
-            text: "Kudoerne"
+            text: "Kuduerne"
         },
         hotspot: {
             type: "function",
@@ -502,11 +502,15 @@ const hotspots = [{
         videoId: "video1",
         markIn: 209,
         markOut: 222,
-        sizeX: 21,
+        sizeX: 22,
         sizeY: 68,
-        posX: 1,
+        posX: 0,
         posY: 29,
-        ui: finalBox,
+        ui: {
+            type: "box",
+            style: `border-right: 6px solid rgb(38 146 12); padding-right: 2vw; background-color: rgb(0 0 0 / 24%); font-size: 250%; line-height: 13; text-align: center; font-weight: 700;`,
+            text: "Vælg Charlie"
+        },
         hotspot: {
             type: "function",
             func: () => {
@@ -522,11 +526,15 @@ const hotspots = [{
         videoId: "video1",
         markIn: 209,
         markOut: 222,
-        sizeX: 21,
+        sizeX: 22,
         sizeY: 68,
         posX: 78,
-        posY: 26,
-        ui: finalBox,
+        posY: 29,
+        ui: {
+            type: "box",
+            style: `border-left: 6px solid rgb(166 57 123); padding-left: 2vw; background-color: rgb(0 0 0 / 24%); font-size: 250%; line-height: 13; text-align: center; font-weight: 700;`,
+            text: "Vælg pigen"
+        },
         hotspot: {
             type: "function",
             func: () => {
@@ -703,7 +711,7 @@ const hotspots = [{
             type: "function",
             func: () => {
                 // Final fail
-                videoPlayer.currentTime(208);
+                videoPlayer.currentTime(206);
                 videoPlayer.play();
                 pauseTime = 221;
             }
