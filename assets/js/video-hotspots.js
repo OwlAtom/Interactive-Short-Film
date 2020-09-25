@@ -177,12 +177,15 @@ const hotspots = [
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(289);
+                videoPlayer.currentTime(95);
                 videoPlayer.play();
-                pauseTime = 294;
+                pauseTime = 119;
             }
         }
     },
+
+
+    
     {
         active: true,
         videoId: "video1",
@@ -203,6 +206,31 @@ const hotspots = [
             }
         }
     },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 123,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 2,
+        posY: 75.5,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Pingvinerne"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Pingvin valgtext
+                videoPlayer.currentTime(125);
+                videoPlayer.play();
+                pauseTime = 182;
+            }
+        }
+    },
     {
         active: true,
         videoId: "video1",
@@ -217,9 +245,33 @@ const hotspots = [
             type: "function",
             func: () => {
                 // flamingo valg
-                videoPlayer.currentTime(289);
+                videoPlayer.currentTime(290);
                 videoPlayer.play();
-                pauseTime = 294;
+                pauseTime = 293;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 2,
+        posY: 84,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Flamingoerne"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // flamingo valgtext 
+                videoPlayer.currentTime(290);
+                videoPlayer.play();
+                pauseTime = 293;
             }
         }
     },
@@ -243,6 +295,56 @@ const hotspots = [
             }
         }
     },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 2,
+        posY: 67,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Løverne"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Løve valgtext
+                videoPlayer.currentTime(298);
+                videoPlayer.play();
+                pauseTime = 302;
+            }
+        }
+    },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 123,
+        sizeX: 25,
+        sizeY: 3,
+        posX: 2,
+        posY: 58.5,
+        ui: {
+            type: "box",
+            style: `border: none;
+            font-size: 250%;
+            color: #272727;`,
+            text: "Hvem skal udspørges?"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+               // spørgsmåltekst
+            }
+        }
+    },
+
     {
         active: true,
         videoId: "video1",
