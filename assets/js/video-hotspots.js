@@ -176,9 +176,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(95);
+                videoPlayer.currentTime(155);
                 videoPlayer.play();
-                pauseTime = 119;
+                pauseTime = 183;
             }
         }
     },
@@ -369,6 +369,33 @@ const hotspots = [
         videoId: "video1",
         markIn: 154,
         markOut: 183,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 5,
+        posY: 73,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Elefanterne"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Elefant valgtext
+                videoPlayer.currentTime(184);
+                videoPlayer.play();
+                pauseTime = 221;
+            }
+        }
+    },
+
+
+    
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 154,
+        markOut: 183,
         sizeX: 3.8,
         sizeY: 6.7,
         posX: 30.8,
@@ -378,6 +405,31 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Flodhest valg
+                videoPlayer.currentTime(317);
+                videoPlayer.play();
+                pauseTime = 321;
+            }
+        }
+    },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 154,
+        markOut: 183,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 5,
+        posY: 81,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Flodhestene"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Flodhest valgtext
                 videoPlayer.currentTime(317);
                 videoPlayer.play();
                 pauseTime = 321;
@@ -404,6 +456,55 @@ const hotspots = [
             }
         }
     },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 154,
+        markOut: 183,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 5,
+        posY: 89,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Kudoerne"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Kudu valg
+                videoPlayer.currentTime(307);
+                videoPlayer.play();
+                pauseTime = 312;
+            }
+        }
+    },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 154,
+        markOut: 183,
+        sizeX: 27.3,
+        sizeY: 5.7,
+        posX: 0,
+        posY: 66,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; color: #272727; text-align: center; background-color: rgb(180 171 159); padding-left: 3%;
+            padding-top: 0.5%`,
+            text: "Hvem skal udspørges?"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+               // spørgsmåltekst
+            }
+        }
+    },
+
     {
         active: true,
         videoId: "video1",
