@@ -347,7 +347,7 @@ const hotspots = [
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
         sizeX: 6,
         sizeY: 11,
@@ -367,7 +367,7 @@ const hotspots = [
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
         sizeX: 6,
         sizeY: 11,
@@ -387,7 +387,7 @@ const hotspots = [
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
         sizeX: 6,
         sizeY: 11,
