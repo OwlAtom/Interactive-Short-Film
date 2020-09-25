@@ -351,8 +351,8 @@ const hotspots = [
         markOut: 183,
         sizeX: 6,
         sizeY: 11,
-        posX: 48,
-        posY: 36.5,
+        posX: 46.9,
+        posY: 34.7,
         ui: animalCircle,
         hotspot: {
             type: "function",
