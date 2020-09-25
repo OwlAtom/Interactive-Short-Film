@@ -142,7 +142,7 @@ let video = {
 
 let animalCircle = {
     type: "box",
-    style: `border: none; background-color: rgba(2,3,4,.3); border-radius: 100vw`
+    style: `border: 5px solid #003b8e; background-color: rgba(0,0,0,.2); border-radius: 100vw`
 };
 let finalBox = {
     type: "box",
@@ -151,16 +151,15 @@ let finalBox = {
 
 let failBox = {
     type: "box",
-    style: `border: none; background-color: red; border-radius: 100vw`,
+    style: "border: none; background-color: #DB2916; border-radius: 1vw; font-size: 250%; padding: 1%;",
     text: "Prøv igen"
 };
 
 let infoBox = {
     type: "box",
-    style: `border: none; background-color: red; border-radius: 100vw`,
+    style: "border: none; background-color: #003b8e; border-radius: 1vw; font-size: 250%; padding: 1%; color: white; text-decoration:none;",
     text: "Læs mere om dette dyr"
 };
-
 
 const hotspots = [
     {
@@ -348,8 +347,8 @@ const hotspots = [
         videoId: "video1",
         markIn: 290,
         markOut: 296,
-        sizeX: 10,
-        sizeY: 10,
+        sizeX: 11,
+        sizeY: 6.9,
         posX: 78,
         posY: 75,
         ui: failBox,
@@ -368,8 +367,8 @@ const hotspots = [
         videoId: "video1",
         markIn: 290,
         markOut: 296,
-        sizeX: 10.8,
-        sizeY: 10.7,
+        sizeX: 14,
+        sizeY: 10,
         posX: 9,
         posY: 75,
         ui: infoBox,
