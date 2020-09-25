@@ -379,9 +379,6 @@ const hotspots = [{
             }
         }
     },
-
-
-    
     {
         active: true,
         videoId: "video1",
@@ -691,20 +688,20 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 332,
+        markOut: 334,
+        sizeX: 11,
+        sizeY: 6.9,
+        posX: 78,
+        posY: 75,
+        ui: failBox,
         hotspot: {
             type: "function",
             func: () => {
                 // Final fail
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(208);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 221;
             }
         }
     }
