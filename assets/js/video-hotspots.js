@@ -140,33 +140,27 @@ let video = {
     }
 }
 
-// data for hotspots
-
-//  `border: none; 
-//         background-color: rgba(255,0,0,.5); 
-//         display: flex; 
-//         justify-content: center; 
-//         align-items: center; 
-//         text-decoration: none; 
-//         font-size: 2vw; 
-//         color: white;`,
-// text: "This is text in a box"
 let animalCircle = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
 };
 let finalBox = {
     type: "box",
-    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+    style: `border: none; background-color: rgba(0,0,0,.5); border-radius: 5vw`
 };
-let FailBox = {
+
+let failBox = {
     type: "box",
-    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+    style: "border: none; background-color: #DB2916; border-radius: 1vw; font-size: 250%; padding: 1%;",
+    text: "Prøv igen"
 };
+
 let infoBox = {
     type: "box",
-    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+    style: "border: none; background-color: #003b8e; border-radius: 1vw; font-size: 250%; padding: 1%; color: white; text-decoration:none;",
+    text: "Læs mere om dette dyr"
 };
+
 const hotspots = [
     {
         active: true,
@@ -184,10 +178,13 @@ const hotspots = [
                 // DEBUG -- skip to first choice
                 videoPlayer.currentTime(95);
                 videoPlayer.play();
-                pauseTime = 120;
+                pauseTime = 119;
             }
         }
     },
+
+
+    
     {
         active: true,
         videoId: "video1",
@@ -208,6 +205,31 @@ const hotspots = [
             }
         }
     },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 123,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 2,
+        posY: 75.5,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Pingvinerne"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Pingvin valgtext
+                videoPlayer.currentTime(125);
+                videoPlayer.play();
+                pauseTime = 182;
+            }
+        }
+    },
     {
         active: true,
         videoId: "video1",
@@ -222,9 +244,33 @@ const hotspots = [
             type: "function",
             func: () => {
                 // flamingo valg
-                videoPlayer.currentTime(280);
+                videoPlayer.currentTime(290);
                 videoPlayer.play();
-                pauseTime = 283;
+                pauseTime = 293;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 2,
+        posY: 84,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Flamingoerne"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // flamingo valgtext 
+                videoPlayer.currentTime(290);
+                videoPlayer.play();
+                pauseTime = 293;
             }
         }
     },
@@ -242,12 +288,62 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Løve valg
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(298);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 302;
             }
         }
     },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 14,
+        sizeY: 6,
+        posX: 2,
+        posY: 67,
+        ui: {
+            type: "box",
+            style: `border: none; font-size: 250%; text-align: center; padding: 0.5%; background-color: #463139;`,
+            text: "Løverne"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Løve valgtext
+                videoPlayer.currentTime(298);
+                videoPlayer.play();
+                pauseTime = 302;
+            }
+        }
+    },
+
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 123,
+        sizeX: 25,
+        sizeY: 3,
+        posX: 2,
+        posY: 58.5,
+        ui: {
+            type: "box",
+            style: `border: none;
+            font-size: 250%;
+            color: #272727;`,
+            text: "Hvem skal udspørges?"
+        },
+        hotspot: {
+            type: "function",
+            func: () => {
+               // spørgsmåltekst
+            }
+        }
+    },
+
     {
         active: true,
         videoId: "video1",
@@ -264,7 +360,7 @@ const hotspots = [
                 // Elefant valg
                 videoPlayer.currentTime(184);
                 videoPlayer.play();
-                pauseTime = 208;
+                pauseTime = 221;
             }
         }
     },
@@ -311,81 +407,78 @@ const hotspots = [
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
+        markIn: 209,
+        markOut: 222,
+        sizeX: 21,
+        sizeY: 68,
+        posX: 1,
+        posY: 29,
         ui: finalBox,
         hotspot: {
             type: "function",
             func: () => {
                 // Final : Win valg
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(225);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 282;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
+        markIn: 209,
+        markOut: 222,
+        sizeX: 21,
+        sizeY: 68,
+        posX: 78,
+        posY: 26,
         ui: finalBox,
         hotspot: {
             type: "function",
             func: () => {
                 // Final: fail valg
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(325);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 333;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: finalBox,
+        markIn: 290,
+        markOut: 296,
+        sizeX: 11,
+        sizeY: 6.9,
+        posX: 78,
+        posY: 75,
+        ui: failBox,
         hotspot: {
             type: "function",
             func: () => {
                 // Flamingo fail
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(95);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 119;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
+        markIn: 290,
+        markOut: 296,
+        sizeX: 14,
+        sizeY: 10,
+        posX: 9,
+        posY: 75,
         ui: infoBox,
         hotspot: {
-            type: "function",
-            func: () => {
-                // Flamingo info
-                videoPlayer.currentTime(284);
-                videoPlayer.play();
-                pauseTime = 288;
-            }
+            type: "link",
+            onHover: true,
+            url: "https://aalborgzoo.dk/dyr/cariberflamingo.aspx",
+            target: "_blank",
         }
     },
     {
@@ -508,7 +601,7 @@ const hotspots = [
             }
         }
     },
-        {
+    {
         active: true,
         videoId: "video1",
         markIn: 95,
@@ -547,7 +640,7 @@ const hotspots = [
     posY: 50,               // top position (in %, but don't write %)
     ui: {                               // how should the hotspot look?
         type: "box",                                // type: "box" or "image"
-        title: "Text when hovering the hotspot",    // optional: add a title attribute with the text 
+        title: "Text when hovering the hotspot",    // optional: add a title attribute with the text
         image: "",                                  // add url for image (if type=image)
         style: "",                                  // add styles, can be used for both image and box
     },
@@ -562,6 +655,8 @@ const hotspots = [
         }
     }
 }
+
+
 
 // BOX/LINK ONLY EXAMPLE ----------------------------------------------------
 // All these keys are required for boxes/links
@@ -618,3 +713,7 @@ const hotspots = [
 
 
 */
+
+
+
+
