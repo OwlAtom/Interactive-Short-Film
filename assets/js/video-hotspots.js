@@ -141,26 +141,62 @@ let video = {
 }
 
 // data for hotspots
-const hotspots = [{
+
+//  `border: none; 
+//         background-color: rgba(255,0,0,.5); 
+//         display: flex; 
+//         justify-content: center; 
+//         align-items: center; 
+//         text-decoration: none; 
+//         font-size: 2vw; 
+//         color: white;`,
+// text: "This is text in a box"
+let animalCircle = {
+    type: "box",
+    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+};
+let finalBox = {
+    type: "box",
+    style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
+};
+const hotspots = [
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 0,
+        markOut: 95,
+        sizeX: 10,
+        sizeY: 20,
+        posX: 24,
+        posY: 5,
+        ui: animalCircle,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // DEBUG -- skip to first choice
+                videoPlayer.currentTime(95);
+                videoPlayer.play();
+                pauseTime = 120;
+            }
+        }
+    },
+    {
         active: true,
         videoId: "video1",
         markIn: 95,
         markOut: 120,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 25.8,
-        posY: 4.9,
-        ui: {
-            type: "box",
-            style: "border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw"
-        },
+        sizeX: 4.1,
+        sizeY: 7.4,
+        posX: 19.7,
+        posY: 30.4,
+        ui: animalCircle,
         hotspot: {
             type: "function",
             func: () => {
-                // Løver
-                videoPlayer.currentTime(284);
+                // pingvin
+                videoPlayer.currentTime(125);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 182;
             }
         }
     },
@@ -173,19 +209,7 @@ const hotspots = [{
         sizeY: 7.3,
         posX: 66.2,
         posY: 87.6,
-        ui: {
-            type: "box",
-            style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
-            //  `border: none; 
-            //         background-color: rgba(255,0,0,.5); 
-            //         display: flex; 
-            //         justify-content: center; 
-            //         align-items: center; 
-            //         text-decoration: none; 
-            //         font-size: 2vw; 
-            //         color: white;`,
-            // text: "This is text in a box"
-        },
+        ui: animalCircle,
         hotspot: {
             type: "function",
             func: () => {
@@ -201,44 +225,118 @@ const hotspots = [{
         videoId: "video1",
         markIn: 95,
         markOut: 120,
-        sizeX: 4.1,
-        sizeY: 7.4,
-        posX: 19.7,
-        posY: 30.4,
-        ui: {
-            type: "box",
-            style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
-        },
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: animalCircle,
         hotspot: {
             type: "function",
             func: () => {
-                // pingvin
-                videoPlayer.currentTime(125);
+                // Løve
+                videoPlayer.currentTime(284);
                 videoPlayer.play();
-                pauseTime = 182;
+                pauseTime = 288;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 0,
-        markOut: 95,
-        sizeX: 10,
-        sizeY: 20,
-        posX: 24,
-        posY: 5,
-        ui: {
-            type: "box",
-            style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
-        },
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: animalCircle,
         hotspot: {
             type: "function",
             func: () => {
-                // DEBUG -- skip to first choice
-                videoPlayer.currentTime(95);
+                // Elefant
+                videoPlayer.currentTime(284);
                 videoPlayer.play();
-                pauseTime = 120;
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: animalCircle,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Flodhest
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: animalCircle,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Kudu
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Final : Win
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
+            }
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 95,
+        markOut: 120,
+        sizeX: 3.8,
+        sizeY: 6.7,
+        posX: 25.8,
+        posY: 4.9,
+        ui: finalBox,
+        hotspot: {
+            type: "function",
+            func: () => {
+                // Final: fail
+                videoPlayer.currentTime(284);
+                videoPlayer.play();
+                pauseTime = 288;
             }
         }
     }
