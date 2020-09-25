@@ -163,7 +163,7 @@ let FailBox = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
 };
-let InfoBox = {
+let infoBox = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.3); border-radius: 100vw`
 };
@@ -377,7 +377,7 @@ const hotspots = [
         sizeY: 6.7,
         posX: 25.8,
         posY: 4.9,
-        ui: finalBox,
+        ui: infoBox,
         hotspot: {
             type: "function",
             func: () => {
@@ -507,8 +507,8 @@ const hotspots = [
                 pauseTime = 288;
             }
         }
-        ,
-    {
+    },
+        {
         active: true,
         videoId: "video1",
         markIn: 95,
