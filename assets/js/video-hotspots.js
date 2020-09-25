@@ -142,7 +142,7 @@ let video = {
 
 let animalCircle = {
     type: "box",
-    style: `border: 3px solid #003b8e; background-color: rgba(0,0,0,.2); border-radius: 100vw`};
+    style: `border: 3px solid rgb(142, 0, 0); border-radius: 100vw`};
 let finalBox = {
     type: "box",
     style: `border: none; background-color: rgba(0,0,0,.5); border-radius: 5vw`
@@ -174,7 +174,7 @@ const hotspots = [{
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(298);
+                videoPlayer.currentTime(155);
                 videoPlayer.play();
                 pauseTime = 302;
             }
@@ -385,13 +385,17 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
-        sizeX: 3.8,
-        sizeY: 6.7,
-        posX: 30.8,
-        posY: 10.9,
-        ui: animalCircle,
+        sizeX: 6,
+        sizeY: 11,
+        posX: 9,
+        posY: 54,
+        ui: {
+            type: "box",
+            style: `border: 3px solid rgb(142, 0, 0); border-radius: 100vw; background: url(assets/images/flodhest.png); background-size: cover;
+            background-repeat: no-repeat;`
+        },
         hotspot: {
             type: "function",
             func: () => {
@@ -406,7 +410,7 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
         sizeX: 14,
         sizeY: 6,
@@ -451,7 +455,7 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
         sizeX: 14,
         sizeY: 6,
@@ -476,7 +480,7 @@ const hotspots = [{
     {
         active: true,
         videoId: "video1",
-        markIn: 154,
+        markIn: 155,
         markOut: 183,
         sizeX: 27.3,
         sizeY: 5.7,
