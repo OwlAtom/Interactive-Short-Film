@@ -192,7 +192,7 @@ const hotspots = [
         active: true,
         videoId: "video1",
         markIn: 95,
-        markOut: 120,
+        markOut: 123,
         sizeX: 4.1,
         sizeY: 7.4,
         posX: 19.7,
@@ -251,8 +251,8 @@ const hotspots = [
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
+        markIn: 154,
+        markOut: 183,
         sizeX: 3.8,
         sizeY: 6.7,
         posX: 25.8,
@@ -262,17 +262,17 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Elefant valg
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(184);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 208;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
+        markIn: 154,
+        markOut: 183,
         sizeX: 3.8,
         sizeY: 6.7,
         posX: 25.8,
@@ -282,17 +282,17 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Flodhest valg
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(317);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 321;
             }
         }
     },
     {
         active: true,
         videoId: "video1",
-        markIn: 95,
-        markOut: 120,
+        markIn: 154,
+        markOut: 183,
         sizeX: 3.8,
         sizeY: 6.7,
         posX: 25.8,
@@ -302,9 +302,9 @@ const hotspots = [
             type: "function",
             func: () => {
                 // Kudu valg
-                videoPlayer.currentTime(284);
+                videoPlayer.currentTime(307);
                 videoPlayer.play();
-                pauseTime = 288;
+                pauseTime = 312;
             }
         }
     },
