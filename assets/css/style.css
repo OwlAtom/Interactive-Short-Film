@@ -46,12 +46,7 @@ i {
     justify-content: space-between;
 }
 header{
-    background-color: #463139;
-    margin-bottom: 3vw;
-    color: white;
-    font-family: var(--hFontFam);
-    font-size: 2vw;
-    padding: 1vw;
+    
 }
 /* Main */
 .centered{
@@ -104,3 +99,33 @@ button:hover {
         --pFont: 2vw;
     }
 }
+
+.flowersright {
+    float: right;
+}
+
+.openingline {
+    text-align: center;
+}
+
+.playmovietext {
+    font-size: 2vw;
+}
+
+.leadingtext {
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+#copyright {
+    text-align: center;
+}
+
+
+
+
