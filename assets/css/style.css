@@ -100,8 +100,47 @@ button:hover {
     }
 }
 
-.flowersright {
+header {
+    height: 30vh;
+    width: 100%;
+}
+
+.logoandflower {
+    width: 40vw;
+    margin: 0;
+    float: left;
+}
+
+.logoimg {
+    width: 20vw;
+    height: 20vh;
+    position: relative;
+}
+
+.flowerimg {
+    width: 18vw;
+    height: 20vh;
+    transform: rotate(270deg);
+    position: absolute;
+}
+
+
+.flowersright img {
     float: right;
+    width: 18vw;
+    height: 20vh;
+}
+
+.flower {
+    transform: rotate(320deg);
+}
+
+.rotateflower {
+    width: 18vw;
+    height: 20vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transform: rotate(350deg);
 }
 
 .openingline {
@@ -116,6 +155,63 @@ button:hover {
     text-align: center;
     font-size: 1.8vw;
 }
+
+.cardscontainer {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    margin: 5vh 0 10vh 0;
+    padding: 0 120px 0 120px;
+}
+
+.card {
+    background-color: #E28F2D;
+    width: 16vw;
+    height: 42vh;
+    position: relative;
+    align-content: center;
+    padding: 0 2vw 0 2vw;
+}
+
+.cardoverskrift {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.beskrivendetext {
+    color: white;
+    text-align: center;
+    
+}
+
+.buttoncontainer {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+button {
+    text-align: center;
+    border: solid white 1px;
+    background-color: #E28F2D;
+    margin: 0;
+    position: absolute;
+    width: 12vw;
+    height: 5vh;
+    bottom: 0;
+}
+
+.buttontext {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 2vh;
+}
+
 
 footer {
     bottom: 0;
