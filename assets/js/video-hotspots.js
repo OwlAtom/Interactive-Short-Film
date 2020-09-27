@@ -162,26 +162,7 @@ let infoBox = {
 };
 
 
-const hotspots = [{
-        active: true,
-        videoId: "video1",
-        markIn: 0,
-        markOut: 95,
-        sizeX: 10,
-        sizeY: 20,
-        posX: 24,
-        posY: 5,
-        ui: animalCircle,
-        hotspot: {
-            type: "function",
-            func: () => {
-                // DEBUG -- skip to first choice
-                videoPlayer.currentTime(279);
-                videoPlayer.play();
-                pauseTime = 281;
-            }
-        }
-    },
+const hotspots = [
     {
         active: true,
         videoId: "video1",
