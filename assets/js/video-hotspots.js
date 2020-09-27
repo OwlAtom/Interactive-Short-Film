@@ -505,7 +505,7 @@ const hotspots = [{
         markIn: 209,
         markOut: 222,
         sizeX: 22,
-        sizeY: 68,
+        sizeY: 71,
         posX: 0,
         posY: 29,
         ui: {
@@ -529,7 +529,7 @@ const hotspots = [{
         markIn: 209,
         markOut: 222,
         sizeX: 22,
-        sizeY: 68,
+        sizeY: 71,
         posX: 78,
         posY: 29,
         ui: {
