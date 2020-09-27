@@ -176,9 +176,9 @@ const hotspots = [{
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(100);
+                videoPlayer.currentTime(279);
                 videoPlayer.play();
-                pauseTime = 255;
+                pauseTime = 281;
             }
         }
     },
@@ -765,6 +765,37 @@ const hotspots = [{
             onHover: true,
             url: "https://aalborgzoo.dk/aarskort.aspx",
             target: "_blank",
+        }
+    },
+    {
+        active: true,
+        videoId: "video1",
+        markIn: 280,
+        markOut: 281.5,
+        sizeX: 15,
+        sizeY: 12.4,
+        posX: 50,
+        posY: 50,
+        ui: {
+            type: "box",
+            style: `border: none;
+            font-size: 250%;
+            color: #fff;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            background-color: rgb(39 39 39 / 70);
+            padding: 1vw;
+            border-radius: .5vw;`,
+            text: "Klik for at se filmen igen."
+        },
+        // see it again
+        hotspot: {
+            type: "function",
+            func: () => {
+                videoPlayer.currentTime(0);
+                videoPlayer.play();
+                pauseTime = 119;
+            }
         }
     }
 ];
