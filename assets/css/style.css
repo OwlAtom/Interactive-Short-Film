@@ -91,8 +91,9 @@ button:hover {
 }
 
 header {
-    height: 20vh;
+    height: 24vh;
     width: 99%;
+    overflow-x: hidden;
 }
 
 .logoandflower {
@@ -106,7 +107,7 @@ header {
     height: 20vh;
     position: absolute;
     z-index: 2;
-    left: 3vw;
+    left: 4vw;
 }
 
 .flowerimg {
@@ -124,17 +125,18 @@ header {
 }
 
 .flower {
-    transform: rotate(280deg);
+    transform: rotate(362.5deg);
     position: absolute;
     height: 20vh;
     right: 0vw;
+    top: -1vw;
 }
 
 .rotateflower {
-    height: 20vh;
-    transform: rotate(350deg);
+    height: 19vh;
+    transform: rotate(330deg);
     position: absolute;
-    right: 0;
+    right: -4vw;
 }
 
 .openingline {
