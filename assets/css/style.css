@@ -82,13 +82,13 @@ video:focus {
     outline: none;
 }
 
-
 /* buttons */
 
 a:hover,
 button:hover {
     cursor: pointer;
 }
+
 
 @media screen AND (max-width:760px) {
     :root {
