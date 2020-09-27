@@ -151,15 +151,16 @@ let finalBox = {
 
 let failBox = {
     type: "box",
-    style: "border: none; background-color: #DB2916; border-radius: 1vw; font-size: 250%; padding: 1%;",
-    text: "Prøv igen"
+    style: "border: none; background-color: rgb(199 58 84 / 95%); border-radius: 0.4vw; font-size: 250%; text-align: center; line-height: 2.4;",
+    text: "Klik og prøv igen"
 };
 
 let infoBox = {
     type: "box",
-    style: "border: none; background-color: #003b8e; border-radius: 1vw; font-size: 250%; padding: 1%; color: white; text-decoration:none;",
-    text: "Læs mere om dette dyr"
+    style: "border: none; background-color: rgb(41 125 187 / 95%); border-radius: 0.4vw; font-size: 250%; color: white; text-align: center; text-decoration:none; line-height: 2.4;",
+    text: "Læs om dette dyr"
 };
+
 
 const hotspots = [{
         active: true,
@@ -551,8 +552,8 @@ const hotspots = [{
         videoId: "video1",
         markIn: 290,
         markOut: 296,
-        sizeX: 11,
-        sizeY: 6.9,
+        sizeX: 18,
+        sizeY: 9,
         posX: 78,
         posY: 75,
         ui: failBox,
@@ -571,9 +572,9 @@ const hotspots = [{
         videoId: "video1",
         markIn: 290,
         markOut: 296,
-        sizeX: 14,
-        sizeY: 10,
-        posX: 9,
+        sizeX: 18,
+        sizeY: 9,
+        posX: 4,
         posY: 75,
         ui: infoBox,
         hotspot: {
@@ -589,8 +590,8 @@ const hotspots = [{
         videoId: "video1",
         markIn: 299,
         markOut: 304,
-        sizeX: 11,
-        sizeY: 6.9,
+        sizeX: 18,
+        sizeY: 9,
         posX: 78,
         posY: 75,
         ui: failBox,
@@ -609,9 +610,9 @@ const hotspots = [{
         videoId: "video1",
         markIn: 299,
         markOut: 304,
-        sizeX: 14,
-        sizeY: 10,
-        posX: 9,
+        sizeX: 18,
+        sizeY: 9,
+        posX: 4,
         posY: 75,
         ui: infoBox,
         hotspot: {
@@ -627,8 +628,8 @@ const hotspots = [{
         videoId: "video1",
         markIn: 317,
         markOut: 322,
-        sizeX: 11,
-        sizeY: 6.9,
+        sizeX: 18,
+        sizeY: 9,
         posX: 78,
         posY: 75,
         ui: failBox,
@@ -647,9 +648,9 @@ const hotspots = [{
         videoId: "video1",
         markIn: 317,
         markOut: 322,
-        sizeX: 14,
-        sizeY: 10,
-        posX: 9,
+        sizeX: 18,
+        sizeY: 9,
+        posX: 4,
         posY: 75,
         ui: infoBox,
         hotspot: {
@@ -665,8 +666,8 @@ const hotspots = [{
         videoId: "video1",
         markIn: 308,
         markOut: 313,
-        sizeX: 11,
-        sizeY: 6.9,
+        sizeX: 18,
+        sizeY: 9,
         posX: 78,
         posY: 75,
         ui: failBox,
@@ -685,9 +686,9 @@ const hotspots = [{
         videoId: "video1",
         markIn: 308,
         markOut: 313,
-        sizeX: 14,
-        sizeY: 10,
-        posX: 9,
+        sizeX: 18,
+        sizeY: 9,
+        posX: 4,
         posY: 75,
         ui: infoBox,
         hotspot: {
@@ -703,8 +704,8 @@ const hotspots = [{
         videoId: "video1",
         markIn: 332,
         markOut: 334,
-        sizeX: 11,
-        sizeY: 6.9,
+        sizeX: 18,
+        sizeY: 9,
         posX: 78,
         posY: 75,
         ui: failBox,
