@@ -83,19 +83,8 @@ button:hover {
     cursor: pointer;
 }
 
-@media screen AND (max-width:760px) {
-    :root {
-        --hFont: 4vw;
-        --pFont: 1.8vw;
-    }
-}
-
-/* MediaQueries for mobile */
-@media screen AND (max-width:500px) {
-    :root {
-        --hFont: 6vw;
-        --pFont: 2vw;
-    }
+#video1 > div.vjs-control-bar{
+    display: none;
 }
 
 header {
