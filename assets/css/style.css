@@ -182,6 +182,8 @@ header {
     color: white;
     text-align: center;
     line-height: 1.5vw;
+    width: 11vw;
+    margin: auto;
 }
 
 .buttoncontainer {

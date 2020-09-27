@@ -772,8 +772,8 @@ const hotspots = [{
         videoId: "video1",
         markIn: 280,
         markOut: 281.5,
-        sizeX: 15,
-        sizeY: 12.4,
+        sizeX: 17,
+        sizeY: 8.3,
         posX: 50,
         posY: 50,
         ui: {
@@ -786,7 +786,7 @@ const hotspots = [{
             background-color: rgb(39 39 39 / 70);
             padding: 1vw;
             border-radius: .5vw;`,
-            text: "Klik for at se filmen igen."
+            text: "Se filmen igen"
         },
         // see it again
         hotspot: {
