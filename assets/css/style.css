@@ -169,7 +169,7 @@ header {
 }
 
 .card {
-    background-color: #E28F2D;
+    background-color: #E28E04;
     width: 16vw;
     height: 42vh;
     position: relative;
@@ -199,7 +199,7 @@ header {
 button {
     text-align: center;
     border: solid white 1px;
-    background-color: #E28F2D;
+    background-color: #E28E04;
     margin: 0;
     position: absolute;
     width: 12vw;
