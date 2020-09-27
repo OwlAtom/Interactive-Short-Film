@@ -175,7 +175,7 @@ const hotspots = [{
             type: "function",
             func: () => {
                 // DEBUG -- skip to first choice
-                videoPlayer.currentTime(209);
+                videoPlayer.currentTime(100);
                 videoPlayer.play();
                 pauseTime = 255;
             }
