@@ -4,6 +4,12 @@ function getYear() {
     title.innerHTML = `© ${currentYear} Duedrengene`;
 }
 
+videojs('video1', {
+    userActions: {
+      doubleClick: false
+    }
+  });
+
 const content = {
     "controls": true,
     "autoplay": false,
@@ -11,7 +17,6 @@ const content = {
     "muted": false
 }
 var videoPlayer = videojs("video1", content);
-
 
 videojs('video1').ready(function () {
     this.on('timeupdate', onVideoTimeupdate);

@@ -86,6 +86,9 @@ button:hover {
 #video1 > div.vjs-control-bar{
     display: none;
 }
+.vjs-tech {
+    pointer-events: none;
+}
 
 header {
     height: 20vh;
