@@ -3,18 +3,14 @@ function getYear() {
     let title = document.getElementById("copyright");
     title.innerHTML = `© ${currentYear} Duedrengene`;
 }
-
-videojs('video1', {
-    userActions: {
-      doubleClick: false
-    }
-  });
-
 const content = {
     "controls": true,
     "autoplay": false,
     "preload": "auto",
-    "muted": false
+    "muted": false,
+    userActions: {
+        doubleClick: false
+      }
 }
 var videoPlayer = videojs("video1", content);
 
