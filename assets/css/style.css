@@ -170,15 +170,16 @@ header {
 }
 
 .cardoverskrift {
+    font-family: 'Alfa Slab One', cursive;
     color: white;
-    font-weight: bolder;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.9vw;
 }
 
 .beskrivendetext {
     color: white;
-    
+    text-align: center;
+    line-height: 1.5vw;
 }
 
 .buttoncontainer {
@@ -187,22 +188,19 @@ header {
     padding-bottom: 2vh;
 }
 
-button {
-    text-align: center;
-    border: solid white 1px;
-    background-color: #E28E04;
+.fakeButton{
     margin: 0;
-    position: absolute;
+    padding-top: 0.6vw;
     width: 12vw;
     height: 5vh;
+    position: absolute;
     bottom: 2vh;
-}
-
-.buttontext {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding-bottom: 2vh;
+    font-weight: 800;
+    text-align: center;
+    background-color: #E28E04;
+    border: solid white 1px;
 }
 
 
